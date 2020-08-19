@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+body {
+    font-family: Avenir;
+    
+}
+
+.light-theme {
+    background-color: #FCFCFC;
+}
+
+.light-theme a{
+    color: #000000;
+}
+
+.topnav {
+    margin: 1% 5% 1% 1%;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    font-size: 30px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.topnav-right {
+    float: right;
+}
+
+#about{
+    margin-top:1%;
+}
+
+#intro {
+    margin: 5% 3% 1% 5%;
+}
+
+#intro h1 {
+    font-weight: 800;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+#intro h2 {
+    font-weight: 800;
+}
+
+#intro p {
+    font-weight: 500;
+    padding-left: 6px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.me-button {
+    background-color: #5890DB;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 50px 50px 50px 0px;
+    margin: 4px 2px;
+}
+
+.break {
+    height: 10px;
+}
+
+.dot {
+    height: 40px;
+    width: 40px;
+    background-color: #5890DB;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 0.5em 0.6em;
+    margin-left: 2%;
+}
+
+.img-photo {
+    border: 8px solid #E9E9E9;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+#about {
+    margin: 5% 3% 1% 5%;
+}
+
+#about h2 {
+    font-weight: 800;
+    font-size: 40px;
+    padding-top: 5%;
+    border-bottom: 5px solid #5890DB;
+    display: inline;
+}
+
+.about-me {
+    padding-top: 2%;
+    font-size: 20px;
+    width: 80%
+}
+
+.zepeto{
+    width: 250px;
+    height: 400px;
+    margin-left: 40%;
+}
+
+.row-custom {
+    display: inline-flex;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    flex-grow: 1;
+  }
+  
+  .left {
+    width: 35%;
+  }
+  
+  .right {
+    width: 65%;
+    padding-top: 4%;
+    padding-left: 3%;
+  }
+
+  .resume-button {
+    background-color: #FCFCFC;
+    border: 3px solid #5890DB;
+    color: black;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+    margin: 4px 2px;
+}
+
+.resume-button:hover {
+    color: #FCFCFC;
+    text-decoration:none;
+    background-color: #5890db;
+}
+
+.dot:hover {
+    background-color: #397FDA;
+}
