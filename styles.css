@@ -23,7 +23,6 @@ body {
 
 .topnav a {
     float: left;
-    font-size: 30px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -87,6 +86,10 @@ body {
     margin-left: 2%;
 }
 
+.dot:hover {
+    background-color: #397FDA;
+}
+
 .img-photo {
     border: 8px solid #E9E9E9;
     border-radius: 50%;
@@ -116,7 +119,7 @@ body {
     width: 250px;
     height: 400px;
     margin-left: 40%;
-}
+    }
 
 .row-custom {
     display: inline-flex;
@@ -138,25 +141,81 @@ body {
     padding-left: 3%;
   }
 
-  .resume-button {
+.resume-button {
     background-color: #FCFCFC;
     border: 3px solid #5890DB;
     color: black;
     font-weight: 500;
     padding: 10px 20px;
     text-align: center;
-    text-decoration: none;
+    text-decoration:none;
     display: inline-block;
     border-radius: 30px;
-    margin: 4px 2px;
-}
+    }
 
 .resume-button:hover {
-    color: #FCFCFC;
-    text-decoration:none;
-    background-color: #5890db;
+color: #FCFCFC;
+text-decoration:none;
+background-color: #5890db;
 }
 
-.dot:hover {
-    background-color: #397FDA;
+#skills {
+    margin: 5% 3% 1% 5%;
+}
+
+#skills h2 {
+    font-weight: 800;
+    font-size: 40px;
+    padding-top: 5%;
+    border-bottom: 5px solid #5890DB;
+    display: inline;
+}
+
+.button-skill {
+    border: 3px solid #5890DB;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 1%;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+#interests {
+    margin: 5% 3% 1% 5%;
+}
+
+#interests h2 {
+    font-weight: 800;
+    font-size: 40px;
+    padding-top: 5%;
+    border-bottom: 5px solid #5890DB;
+    display: inline;
+}
+
+#interests h4 {
+    font-weight: 500;
+    display: inline-block; 
+    margin: 1% 1%;
+}
+
+.interest-item {
+    margin: 1% 2%;
+}
+
+.diamond {
+    background: #5890DB;
+    border-radius: 3px;
+    transform: rotate(-45deg);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.interest-item-1 {
+    margin: 6% 4%;
+}
+
+.interest-item-2 {
+    margin: 0% 4%;
 }
