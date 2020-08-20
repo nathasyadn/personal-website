@@ -4,9 +4,7 @@
     <title>Natasya Meidiana</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -17,7 +15,8 @@
         <div class="topnav">
             <a></a>
             <a></a>
-            <a><img src="assets/openmoji_crescent-moon.png" height="50px" width="50px"></a>
+            <a class="dark-toggle" onclick="toggleButton()"><img src="assets/openmoji_crescent-moon.png" height="50px"
+                    width="50px" id="dark-icon"></a>
             <div class="topnav-right">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -32,15 +31,15 @@
             <div class="col-sm">
                 <h2 class="me-button">Hello, I'm</h2>
                 <h1>Natasya Meidiana Akhda</h1>
-                <span><img src="assets/mdi_email.png" width="30px" height="30px">
+                <span><img src="assets/mdi_email.png" width="30px" height="30px" id="email-icon">
                     <p>natasya.meidiana@ui.ac.id</p>
                 </span>
                 <div class=break></div>
-                <span><img src="assets/mdi_call.png" width="30px" height="30px">
+                <span><img src="assets/mdi_call.png" width="30px" height="30px" id="call-icon">
                     <p>+6285384255740</p>
                 </span>
                 <div class=break></div>
-                <span><img src="assets/mdi_location_on.png" width="30px" height="30px">
+                <span><img src="assets/mdi_location_on.png" width="30px" height="30px" id="location-icon">
                     <p>Depok, Jawa Barat, Indonesia</p>
                 </span>
 
@@ -64,7 +63,7 @@
                 </div>
             </div>
             <div class="col-sm text-center">
-                <img src=" assets/S__73826318.jpg " class="img-photo">
+                <img src=" assets/S__73826318.jpg " class="img-photo" id="photo">
             </div>
         </div>
     </div>
@@ -149,7 +148,7 @@
             <div class="col-sm">
                 <h2>Education</h2>
                 <div class="card">
-                    <h4>Computer Science - University of Indonesia</h4>
+                    <h4>Computer Science - <a href="https://www.cs.ui.ac.id/" >University of Indonesia</a></h4>
                     <p>Sep 2017 - Present</p>
                     <div>
                         <div class="diamond-work"></div>
@@ -265,6 +264,155 @@
             </div>
         </div>
     </div>
+
+    <div id="portfolio">
+        <h2 class="title">Portfolio</h2>
+        <div class="row-custom">
+            <div class="column-1">
+                <img src="assets/Mockup copy 2 1.png" class="img-porto">
+            </div>
+            <div class="column-2">
+                <a href="https://www.behance.net/gallery/102444979/Darurat-UX-Case-Study"><h2>Darurat</h2></a>
+                <div>
+                    <div class="diamond-work"></div>
+                    <p class="porto-text">Darurat is an online emergency platform to help people get help almost
+                        immediately by a push of a button. All it takes is just 3-taps to get the help you need</p>
+                </div>
+
+                <div>
+                    <div class="diamond-work"></div>
+                    <p class="porto-text">Designed application prototypes using Figma</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-custom" style="margin-bottom: 6%;">
+            <div class="column-1">
+                <img src="assets/Screen Shot 2020-08-12 at 2.02 2.png" class="img-porto" style="width:50%" id='buildfocus-photo'>
+            </div>
+            <div class="column-2" style="padding-top: 1%;">
+                <a href="https://www.behance.net/gallery/102308751/BuildFocus"><h2>BuildFocus</h2></a>
+                <div>
+                    <div class="diamond-work"></div>
+                    <p class="porto-text">Productive application - Made for Software Engineering Project Course 2020</p>
+                </div>
+
+                <div>
+                    <div class="diamond-work"></div>
+                    <p class="porto-text">Designed the user interface and user experience</p>
+                </div>
+
+                <div>
+                    <div class="diamond-work"></div>
+                    <p class="porto-text">Developed code for the user interface</p>
+                </div>
+
+                <div>
+                    <h5 class="button-skill">Flutter</h5>
+                    <h5 class="button-skill">Docker</h5>
+                    <h5 class="button-skill">MySQL</h5>
+                    <h5 class="button-skill">Dart</h5>
+                    <h5 class="button-skill">Figma</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-custom">
+            <div class="column-1">
+                <img src="assets/Mockup 1.png" class="img-porto">
+            </div>
+            <div class="column-2" style="padding-top: 3%;">
+                <a href="http://ridhobisa.herokuapp.com/"><h2>RidhoBisa</h2></a>
+                <div>
+                    <div class="diamond-work"></div>
+                    <p class="porto-text">Donation website - Made for Intelligent Systems Course 2019</p>
+                </div>
+
+                <div>
+                    <div class="diamond-work"></div>
+                    <p class="porto-text">Developed code for the user interface</p>
+                </div>
+
+                <div>
+                    <h5 class="button-skill">HTML</h5>
+                    <h5 class="button-skill">Javascript</h5>
+                    <h5 class="button-skill">CSS</h5>
+                    <h5 class="button-skill">Git</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-custom">
+            <div class="column-1">
+                <img src="assets/Frame 10.png" class="img-porto">
+            </div>
+            <div class="column-2" style="padding-top: 3%;">
+                <a href="https://gitlab.com/natasyameidiana"><h2> Other Web-based Projects</h2></a>
+                <p class="porto-text">Made other several web-based projects for my coursework assignments such as:</p>
+
+                <div>
+                    <div class="diamond-work"></div>
+                    <p class="porto-text">Sinarperak - a crowdfunding website</p>
+                </div>
+
+                <div>
+                    <div class="diamond-work"></div>
+                    <p class="porto-text">Ourbike! - a bikes rental website</p>
+                </div>
+
+                <div>
+                    <h5 class="button-skill">HTML</h5>
+                    <h5 class="button-skill">Javascript</h5>
+                    <h5 class="button-skill">CSS</h5>
+                    <h5 class="button-skill">Python</h5>
+                </div>
+
+
+                <div>
+                    <h5 class="button-skill">Django</h5>
+                    <h5 class="button-skill">Git</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>Copyright © 2020 by Natasya Meidiana</footer>
 </body>
+
+<script>
+    var darkMode = false;
+    function toggleButton() {
+        darkMode = !darkMode;
+
+        var element = document.body;
+        element.classList.toggle("dark-theme");
+
+        var img = document.getElementById('photo');
+        img.classList.toggle('dark-img-photo');
+        img.classList.toggle('img-photo');
+
+        var icon = document.getElementById('dark-icon');
+        var mailIcon = document.getElementById('email-icon');
+        var callIcon = document.getElementById('call-icon');
+        var locationIcon = document.getElementById('location-icon');
+        var buildFocusIcon = document.getElementById('buildfocus-photo');
+
+        if (darkMode) {
+            icon.src = "assets/Vector.png";
+            mailIcon.src = "assets/mdi_email_white.png";
+            callIcon.src = "assets/mdi_call_white.png";
+            locationIcon.src = "assets/mdi_location_on_white.png";
+            buildFocusIcon.src = "assets/Screen Shot 2020-08-15 at 8.36 1.png";
+        } else {
+            icon.src = "assets/openmoji_crescent-moon.png";
+            mailIcon.src = "assets/mdi_email.png";
+            callIcon.src = "assets/mdi_call.png";
+            locationIcon.src = "assets/mdi_location_on.png";
+            buildFocusIcon.src = "assets/Screen Shot 2020-08-12 at 2.02 2.png";
+        }
+    }
+</script>
 
 </html>
