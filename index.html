@@ -2,32 +2,33 @@
 
 <head>
     <title>Natasya Meidiana</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="light-theme">
     <div id="header">
-        <div class="topnav">
-            <a></a>
-            <a></a>
-            <a class="dark-toggle" onclick="toggleButton()"><img src="assets/openmoji_crescent-moon.png" height="50px"
-                    width="50px" id="dark-icon"></a>
+        <div class="topnav" id="myTopnav">
+            <a class="dark-toggle"><img src="assets/openmoji_crescent-moon.png" height="50px" width="50px"
+                    id="dark-icon" onclick="toggleButton()"></a>
             <div class="topnav-right">
-                <a href="#home">Home</a>
+                <a href="#header">Home</a>
                 <a href="#about">About</a>
                 <a href="#work">Experiences</a>
                 <a href="#portfolio">Portfolio</a>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
 
     <div id="intro">
-        <div class="row">
+        <div class="row" id="hello-pic">
             <div class="col-sm">
                 <h2 class="me-button">Hello, I'm</h2>
                 <h1>Natasya Meidiana Akhda</h1>
@@ -47,7 +48,7 @@
                 <div class=break></div>
                 <div class=break></div>
 
-                <div style="margin-left: 2%;">
+                <div class="icon-link">
                     <a href="https://gitlab.com/natasyameidiana" class="dot"><img src="assets/sprite_icons_tanuki 1.png"
                             width="20px" height="20px"></a>
                     <a href="https://www.linkedin.com/in/nathasyadn/" class="dot"><img
@@ -61,8 +62,9 @@
                     <a href="https://github.com/nathasyadn" class="dot"><img src="assets/github.png" width="20px"
                             height="20px"></a>
                 </div>
+                <div class=break></div>
             </div>
-            <div class="col-sm text-center">
+            <div class="col-sm text-center" style="margin-top: 3%">
                 <img src=" assets/S__73826318.jpg " class="img-photo" id="photo">
             </div>
         </div>
@@ -70,11 +72,11 @@
 
     <div id="about">
         <div class="row-custom">
-            <div class="column left"">
+            <div class="column-about-1">
                 <img src=" assets/zepeto.png " class=" zepeto">
             </div>
-            <div class="column right">
-                <h2>About Me</h2>
+            <div class="column-about-2">
+                <h2 class="title">About Me</h2>
                 <p class="about-me">You can call me Caca! I’m a final year computer science student at the University of
                     Indonesia. I am
                     a passionate and dedicated person who always up to new challenges and experiences. I love to design
@@ -87,7 +89,7 @@
 
     <div id=skills>
         <h2>Skills</h2>
-        <div style="text-align: center">
+        <div style="text-align: center" id=skill-set>
             <div style="margin-top: 2%;"><span>
                     <h5 class="button-skill">Figma</h5>
                     <h5 class="button-skill">Adobe XD</h5>
@@ -148,7 +150,7 @@
             <div class="col-sm">
                 <h2>Education</h2>
                 <div class="card">
-                    <h4>Computer Science - <a href="https://www.cs.ui.ac.id/" >University of Indonesia</a></h4>
+                    <h4>Computer Science - <a href="https://www.cs.ui.ac.id/">University of Indonesia</a></h4>
                     <p>Sep 2017 - Present</p>
                     <div>
                         <div class="diamond-work"></div>
@@ -166,13 +168,14 @@
             <div class="col-sm">
                 <h2>Work Experiences</h2>
                 <div class="card">
-                    <h4>General Secretary - <a href="https://bem.cs.ui.ac.id/" >BEM FASILKOM UI</a></h4>
+                    <h4>General Secretary - <a href="https://bem.cs.ui.ac.id/">BEM FASILKOM UI</a></h4>
                     <p>Dec 2019 - Present</p>
 
                     <div>
                         <div class="diamond-work"></div>
                         <p class="card-text">BEM Fasilkom UI (Student Executive Council) is an organization for the
-                            Faculty of Computer Science, University of Indonesia students to serve and create meaningful
+                            Faculty of Computer Science, University of Indonesia students to serve and create
+                            meaningful
                             creations by leveraging information technology.</p>
                     </div>
 
@@ -183,12 +186,13 @@
                 </div>
 
                 <div class="card">
-                    <h4>UI/UX Designer Intern - <a href="https://www.blinkgoo.com/" >Blinkgoo</a></h4>
+                    <h4>UI/UX Designer Intern - <a href="https://www.blinkgoo.com/">Blinkgoo</a></h4>
                     <p>Jun 2020 - Sep 2020</p>
 
                     <div>
                         <div class="diamond-work"></div>
-                        <p class="card-text">Conduct competitive analysis to enhance the user experience of the Blinkgoo
+                        <p class="card-text">Conduct competitive analysis to enhance the user experience of the
+                            Blinkgoo
                             website and mobile
                             website. </p>
                     </div>
@@ -205,14 +209,15 @@
                         <p class="card-text">
                             Researched,designed, prototyped, and conducted usability testing for Blinkgoo Points to
                             increase the
-                            conversion rate of click the product and to provide easy access for users to buy products
+                            conversion rate of click the product and to provide easy access for users to buy
+                            products
                             using points.
                         </p>
                     </div>
                 </div>
 
                 <div class="card">
-                    <h4>GoTix Strategy Analyst Intern - <a href="https://go-tix.id/" >LOKET</a></h4>
+                    <h4>GoTix Strategy Analyst Intern - <a href="https://go-tix.id/">LOKET</a></h4>
                     <p>Dec 2019 - Jan 2020</p>
 
                     <div>
@@ -224,7 +229,8 @@
 
                     <div>
                         <div class="diamond-work"></div>
-                        <p class="card-text">Conducted an analysis based on GoTix products to make a new shuffle card
+                        <p class="card-text">Conducted an analysis based on GoTix products to make a new shuffle
+                            card
                             category.</p>
                     </div>
 
@@ -237,12 +243,13 @@
                 </div>
 
                 <div class="card">
-                    <h4>GoTix Strategy Analyst Intern - <a href="https://go-tix.id/" >LOKET</a></h4>
+                    <h4>GoTix Strategy Analyst Intern - <a href="https://go-tix.id/">LOKET</a></h4>
                     <p>Jun 2019 - Aug 2019</p>
 
                     <div>
                         <div class="diamond-work"></div>
-                        <p class="card-text">Conducted a competitive analysis, user journey research, user flow, user
+                        <p class="card-text">Conducted a competitive analysis, user journey research, user flow,
+                            user
                             journey map, and user
                             interviews for GoTix 3. 0 Attractions Product and Merchant Dashboard.</p>
                     </div>
@@ -268,11 +275,13 @@
     <div id="portfolio">
         <h2 class="title">Portfolio</h2>
         <div class="row-custom">
-            <div class="column-1">
+            <div class="column-portofolio-1" >
                 <img src="assets/Mockup copy 2 1.png" class="img-porto">
             </div>
-            <div class="column-2">
-                <a href="https://www.behance.net/gallery/102444979/Darurat-UX-Case-Study"><h2>Darurat</h2></a>
+            <div class="column-portofolio-2" style="padding-top: 8%">
+                <a href="https://www.behance.net/gallery/102444979/Darurat-UX-Case-Study">
+                    <h2>Darurat</h2>
+                </a>
                 <div>
                     <div class="diamond-work"></div>
                     <p class="porto-text">Darurat is an online emergency platform to help people get help almost
@@ -286,15 +295,19 @@
             </div>
         </div>
 
-        <div class="row-custom" style="margin-bottom: 6%;">
-            <div class="column-1">
-                <img src="assets/Screen Shot 2020-08-12 at 2.02 2.png" class="img-porto" style="width:50%" id='buildfocus-photo'>
+        <div class="row-custom">
+            <div class="column-portofolio-1" style="margin-bottom: 5%;">
+                <img src="assets/Screen Shot 2020-08-12 at 2.02 2.png" class="img-porto" style="width:50%"
+                    id='buildfocus-photo'>
             </div>
-            <div class="column-2" style="padding-top: 1%;">
-                <a href="https://www.behance.net/gallery/102308751/BuildFocus"><h2>BuildFocus</h2></a>
+            <div class="column-portofolio-2">
+                <a href="https://www.behance.net/gallery/102308751/BuildFocus">
+                    <h2>BuildFocus</h2>
+                </a>
                 <div>
                     <div class="diamond-work"></div>
-                    <p class="porto-text">Productive application - Made for Software Engineering Project Course 2020</p>
+                    <p class="porto-text">Productive application - Made for Software Engineering Project Course 2020
+                    </p>
                 </div>
 
                 <div>
@@ -318,11 +331,13 @@
         </div>
 
         <div class="row-custom">
-            <div class="column-1">
+            <div class="column-portofolio-1">
                 <img src="assets/Mockup 1.png" class="img-porto">
             </div>
-            <div class="column-2" style="padding-top: 3%;">
-                <a href="http://ridhobisa.herokuapp.com/"><h2>RidhoBisa</h2></a>
+            <div class="column-portofolio-2" style="padding-top: 3%;">
+                <a href="http://ridhobisa.herokuapp.com/">
+                    <h2>RidhoBisa</h2>
+                </a>
                 <div>
                     <div class="diamond-work"></div>
                     <p class="porto-text">Donation website - Made for Intelligent Systems Course 2019</p>
@@ -343,12 +358,15 @@
         </div>
 
         <div class="row-custom">
-            <div class="column-1">
+            <div class="column-portofolio-1">
                 <img src="assets/Frame 10.png" class="img-porto">
             </div>
-            <div class="column-2" style="padding-top: 3%;">
-                <a href="https://gitlab.com/natasyameidiana"><h2> Other Web-based Projects</h2></a>
-                <p class="porto-text">Made other several web-based projects for my coursework assignments such as:</p>
+            <div class="column-portofolio-2" style="padding-top: 3%;">
+                <a href="https://gitlab.com/natasyameidiana">
+                    <h2> Other Web-based Projects</h2>
+                </a>
+                <p class="porto-text">Made other several web-based projects for my coursework assignments such as:
+                </p>
 
                 <div>
                     <div class="diamond-work"></div>
@@ -365,10 +383,6 @@
                     <h5 class="button-skill">Javascript</h5>
                     <h5 class="button-skill">CSS</h5>
                     <h5 class="button-skill">Python</h5>
-                </div>
-
-
-                <div>
                     <h5 class="button-skill">Django</h5>
                     <h5 class="button-skill">Git</h5>
                 </div>
@@ -411,6 +425,15 @@
             callIcon.src = "assets/mdi_call.png";
             locationIcon.src = "assets/mdi_location_on.png";
             buildFocusIcon.src = "assets/Screen Shot 2020-08-12 at 2.02 2.png";
+        }
+    }
+
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
         }
     }
 </script>
