@@ -322,10 +322,38 @@
     <div id="portfolio">
         <h2 class="title">Portfolio</h2>
         <div class="row-custom">
+            <div class="column-portofolio-1" style="padding-top: 8%;">
+                <img src="assets/Screen Shot 2021-03-21 at 6.02 1.png" class="img-porto" style="width:50%"
+                    id='wastee-photo'>
+            </div>
+            <div class="column-portofolio-2">
+                <a href="https://www.behance.net/gallery/118683659/Wastee-UX-Case-Study">
+                    <h2>Wastee</h2>
+                </a>
+                <div>
+                    <div class="diamond-work"></div>
+                    <p class="porto-text">Wastee is an application that provides a platform for buying and selling environmentally 
+                        friendly products and a container of information related to the sustainability of Indonesia’s 
+                        environment. Made for Human Computer Interaction Course 2020
+                    </p>
+                </div>
+
+                <div>
+                    <div class="diamond-work"></div>
+                    <p class="porto-text">Designed the application using Figma</p>
+                </div>
+
+                <div>
+                    <h5 class="button-skill">Figma</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-custom">
             <div class="column-portofolio-1" >
                 <img src="assets/Mockup copy 2 1.png" class="img-porto">
             </div>
-            <div class="column-portofolio-2" style="padding-top: 8%">
+            <div class="column-portofolio-2" style="padding-top: 8%;">
                 <a href="https://www.behance.net/gallery/102444979/Darurat-UX-Case-Study">
                     <h2>Darurat</h2>
                 </a>
@@ -459,6 +487,7 @@
         var callIcon = document.getElementById('call-icon');
         var locationIcon = document.getElementById('location-icon');
         var buildFocusIcon = document.getElementById('buildfocus-photo');
+        var wastee = document.getElementById('wastee-photo');
 
         if (darkMode) {
             icon.src = "assets/Vector.png";
@@ -466,12 +495,14 @@
             callIcon.src = "assets/mdi_call_white.png";
             locationIcon.src = "assets/mdi_location_on_white.png";
             buildFocusIcon.src = "assets/Screen Shot 2020-08-15 at 8.36 1.png";
+            wastee.src = "assets/Screen Shot 2021-03-21 at 6.32 2.png";
         } else {
             icon.src = "assets/openmoji_crescent-moon.png";
             mailIcon.src = "assets/mdi_email.png";
             callIcon.src = "assets/mdi_call.png";
             locationIcon.src = "assets/mdi_location_on.png";
             buildFocusIcon.src = "assets/Screen Shot 2020-08-12 at 2.02 2.png";
+            wastee.src = "assets/Screen Shot 2021-03-21 at 6.32 1.png";
         }
     }
 
